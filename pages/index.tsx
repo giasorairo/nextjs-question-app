@@ -1,13 +1,19 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Link from 'next/link';
+import styles from '../styles/Home.module.css';
+import { useAuthentication } from '../hooks/authentication';
 
 export default function Home() {
+  const { user } = useAuthentication();
   return (
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <h1>{`id: ${user?.uid || '未ログイン'}`}</h1>
+      <Link href="page2"><a>go to page2</a></Link>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
