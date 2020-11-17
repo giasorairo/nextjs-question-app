@@ -4,7 +4,13 @@ import '../lib/firebase';
 import dayjs from 'dayjs';
 import 'dayjs/locale/ja';
 
-function MyApp({ Component, pageProps }) {
+type MyAppProps = {
+  Component: any,
+  pageProps: any,
+};
+
+function MyApp(props: MyAppProps) {
+  const { Component, pageProps } = props;
   return (
     <RecoilRoot>
       <Component {...pageProps} />
