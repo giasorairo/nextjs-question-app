@@ -1,6 +1,10 @@
 import { ToastContainer } from "react-toastify";
+import React from 'react';
 
-export function Layout({ children }) {
+type LayoutProps = { children: any };
+
+export function Layout(props: LayoutProps) {
+  const { children } = props;
   return (
     <div>
       <nav
