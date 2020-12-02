@@ -2,9 +2,21 @@ import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import { useAuthentication } from '../hooks/authentication';
+import sharp from 'sharp';
 
 export default function Home() {
   const { user } = useAuthentication();
+
+
+  const svg = `<?xml version="1.0"?>
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 630" width="1200" height="630" fill="lightgray">
+    <rect x="0" y="0" width="600" height="315" fill="blue" />
+    <circle cx="300" cy="157" r="50" fill="none" stroke="red" stroke-width="10" />
+    </svg>`;
+  console.log(sharp)
+  //  console.log(buffer)
+  
+
   return (
     <div className={styles.container}>
       <Head>

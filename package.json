@@ -8,19 +8,24 @@
     "start": "next start"
   },
   "dependencies": {
+    "@types/sharp": "^0.26.1",
     "bootstrap": "^5.0.0-alpha3",
     "dayjs": "^1.9.6",
     "firebase": "^8.0.2",
+    "firebase-admin": "^9.4.1",
     "next": "10.0.1",
+    "node-pre-gyp": "^0.16.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-toastify": "^6.1.0",
     "recoil": "^0.1.2",
-    "sass": "^1.29.0"
+    "sass": "^1.29.0",
+    "sharp": "^0.26.3"
   },
   "devDependencies": {
     "@types/node": "^14.14.7",
     "@types/react": "^16.9.56",
-    "typescript": "^4.0.5"
+    "typescript": "^4.0.5",
+    "canvas": "^2.6.1"
   }
 }
