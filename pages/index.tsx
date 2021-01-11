@@ -2,9 +2,11 @@ import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import { useAuthentication } from '../hooks/authentication';
+import sharp from 'sharp';
 
 export default function Home() {
   const { user } = useAuthentication();
+
   return (
     <div className={styles.container}>
       <Head>

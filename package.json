@@ -8,9 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@types/sharp": "^0.26.1",
     "bootstrap": "^5.0.0-alpha3",
+    "convert-svg-to-png": "^0.5.0",
     "dayjs": "^1.9.6",
     "firebase": "^8.0.2",
+    "firebase-admin": "^9.4.1",
     "next": "10.0.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
